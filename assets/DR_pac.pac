@@ -19,7 +19,8 @@ function FindProxyForURL(url, host) {
                 return "DIRECT";
       
       
-            if (shExpMatch(host, "www.neverssl.com"))
+            if ((shExpMatch(host, "www.neverssl.com")) ||
+                (shExpMatch(host, "portquiz.net")))
                 return block;
                 
             
